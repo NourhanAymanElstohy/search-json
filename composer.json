@@ -1,0 +1,34 @@
+{
+    "name": "nourayman/search-json",
+    "description": "Search JSON columns with Arabic character normalization",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nourayman\\SearchJson\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nourayman\\SearchJson\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nourayman\\SearchJson\\SearchJsonServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Nourhan Ayman",
+            "email": "nourhanelstohy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
