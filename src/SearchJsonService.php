@@ -65,20 +65,7 @@ class SearchJsonService
                 });
             }
         });
-        //
-        // $query->where(function ($query) use ($fields, $regexPattern, $langs) {
-        //     foreach ($fields as $field) {
-        //         $query->orWhere(function ($query) use ($field, $regexPattern, $langs) {
-        //             foreach ($langs as $lang) {
-        //                 // Check if the field contains the language key to avoid errors
-        //                 $jsonPath = "$.$lang";
-        //                 $query->orWhereRaw("JSON_UNQUOTE(JSON_EXTRACT($field, $jsonPath)) IS NOT NULL
-        //                 AND JSON_UNQUOTE(JSON_EXTRACT($field, $jsonPath)) REGEXP ?", [$regexPattern]);
-        //             }
-        //         });
-        //     }
-        // });
-
+      
         // Execute and return the query results
         return $query;
     }
